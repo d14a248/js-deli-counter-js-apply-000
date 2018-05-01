@@ -1,8 +1,13 @@
-var katzDeli = []; //is this necessary?
+var customerNumber =  0;
 
 function takeANumber(customersInLine,customerName){
   customersInLine.push(customerName);
   return "Welcome, " + customerName + ". You are number " + (customersInLine.length) + " in line.";
+}
+
+function takeANumber(customersInLine){
+  customerNumber += 1;
+  customersInLine.push(customerNumber);
 }
 
 function nowServing(customersInLine){
